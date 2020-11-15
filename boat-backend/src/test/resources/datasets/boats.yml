@@ -1,0 +1,9 @@
+boat:
+  - id: 1
+    name: "Boat 1"
+    description: "Description 1"
+    version: 1
+  - id: 2
+    name: "Boat 2"
+    description: "Description 2"
+    version: 2
