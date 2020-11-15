@@ -1,5 +1,4 @@
-# Stage 1 - Build React App inside temporary Node container
-# FROM node:carbon-alpine as react-build
+# Stage 1 - Build Angular App inside temporary Node container
 FROM node:10-alpine as builder
 
 WORKDIR /usr/src/app

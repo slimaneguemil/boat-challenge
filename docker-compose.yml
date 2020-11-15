@@ -13,6 +13,3 @@ services:
 
   backend:
     build: ./boat-backend
-      #command: /irpi/scripts/svc/run.sh
-      #ports:
-    # - 8080:8080
