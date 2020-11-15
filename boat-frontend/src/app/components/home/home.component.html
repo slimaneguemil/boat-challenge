@@ -1,0 +1,17 @@
+<div class="container">
+  <table class="table table-bordered table-inverse">
+    <tr>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+    <tr *ngFor="let boat of boats">
+      <td>
+        <a [routerLink]="['/update', boat.id]">{{boat.name}}</a>
+      </td>
+      <td>
+        {{boat.description}}
+      </td>
+    </tr>
+  </table>
+  <button type="button" class="btn btn-primary"  routerLink="/boat">Add</button>
+</div>
