@@ -1,0 +1,18 @@
+version: "3.4"
+
+services:
+
+  angular:
+    build:
+      context: "boat-frontend/"
+    volumes:
+      - ./boat-frontend/nginx.conf:/etc/nginx/nginx.conf
+    image: boat-app
+    ports:
+      - 4200:4200
+
+  backend:
+    build: ./boat-backend
+      #command: /irpi/scripts/svc/run.sh
+      #ports:
+    # - 8080:8080
