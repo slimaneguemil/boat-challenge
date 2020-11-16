@@ -20,3 +20,6 @@ docker-compose up
     back-end:
         cd boat-backend
         launch spring-boot
+
+to use the application open:
+http://localhost:4200
