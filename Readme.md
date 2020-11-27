@@ -22,4 +22,4 @@ docker-compose up
         launch spring-boot
 
 to use the application open:
-http://localhost:4200
+http://localhost:4200 
