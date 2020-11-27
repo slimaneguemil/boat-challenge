@@ -4,7 +4,7 @@
         stage('backend'){
             steps {
                 dir('boat-backend/'){
-                    sh 'ls'
+                    sh './mvnw clean package -DskipTests'
                 }
             }
         }
