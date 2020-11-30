@@ -8,11 +8,13 @@ on: [push]
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-latest:1.0.0
     steps:
     - uses: actions/checkout@v2
 
     - name: docker build csharp
       run: |
-        docker build ./boat-backend -t boat-backend
+        docker build ./boat-backend -t abouadam/boat-backend:1.0.0
+    - name : docker push
+      run : docker push abouadam/boat-backend:1.0.0
 
