@@ -3,7 +3,7 @@ You need to be identified to use it, you can connect with you Web Identity provi
 
 ![design_overview](https://user-images.githubusercontent.com/33250203/99196776-c7736580-278e-11eb-90dc-59217b979eff.png)
 
-
+##########################################
 There are 2 ways to launch the application 
 
 1- launch the full application with docker-compose: 
