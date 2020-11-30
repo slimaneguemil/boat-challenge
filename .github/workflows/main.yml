@@ -2,14 +2,6 @@
 
 name: CI
 
-# Controls when the action will run. 
-on:
-  # Triggers the workflow on push or pull request events but only for the master branch
-  push:
-    branches: [ master ]
-  pull_request:
-    branches: [ master ]
-
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
@@ -25,12 +17,10 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
 
-       - name : docker build csharp
+     - name : docker build csharp
        run: |
           docker build ./c# -t aimvector/csharp:1.0.0
       # Runs a single command using the runners shell
       - name: docker push
         run: |
           docker push abouadam/csharp:1.0.0
-
- 
