@@ -14,5 +14,5 @@ jobs:
 
     - name: docker build csharp
       run: |
-        docker build ./boat-challenge/boat-backend -t boat-backend
+        docker build ./boat-backend -t boat-backend
 
