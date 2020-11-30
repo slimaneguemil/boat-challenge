@@ -19,7 +19,7 @@ jobs:
         docker login -u $DOCKER_USER -p $DOCKER_PASSWORD      
     - name: docker build csharp
       run: |
-        docker build ./boat-backend -t abouadam/boat-backend:1.0.0
+        docker build ./boat-backend -t roudoudou/boat-backend:1.0.0
     - name : docker push
-      run : docker push abouadam/boat-backend:1.0.0
+      run : docker push roudoudou/boat-backend:1.0.0
 
