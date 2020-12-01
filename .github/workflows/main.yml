@@ -15,7 +15,8 @@ jobs:
       uses: actions/setup-java@v1
       with:
         java-version: 1.8
-    - name: mvn clean package -DskipTests
+    - name: buil with maven
+      run: mvn clean package -DskipTests
 
   docker-push:
     runs-on: ubuntu-latest
